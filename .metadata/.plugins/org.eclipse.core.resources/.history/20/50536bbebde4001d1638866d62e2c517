@@ -1,0 +1,17 @@
+package com.example.demo.rules;
+
+public class Bike implements VehicleConsole {
+
+	@Override
+	public void driveSafely() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void followRules() {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

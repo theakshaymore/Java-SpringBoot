@@ -1,0 +1,13 @@
+package com.example.demo.rules;
+
+import com.example.demo.game.Mario;
+
+public class VehicleRunner {
+	
+	public VehicleRunner() {
+		
+	}
+	
+	
+	VehicleConsole vehicleConsole()
+}

@@ -1,0 +1,12 @@
+package com.example.demo.game;
+
+public class GameRunner {
+
+	public static void main(String[] args) {
+		
+		Mario m = new Mario();
+		m.up();
+		m.down();
+	}
+
+}

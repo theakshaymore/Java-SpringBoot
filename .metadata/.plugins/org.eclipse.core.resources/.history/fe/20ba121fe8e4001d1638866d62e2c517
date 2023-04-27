@@ -1,0 +1,31 @@
+package com.example.demo.controller;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.GetMapping;
+
+import com.example.demo.entity.Product;
+import com.example.demo.service.ServiceImplementation;
+
+@RestController
+@RequestMapping("products")
+public class ProductController {
+	
+	private ServiceImplementation serviceImplementation;
+	
+	@Autowired
+	public ProductController(ServiceImplementation serviceImplementation) {
+		this.serviceImplementation = serviceImplementation;
+	}
+	
+	@GetMapping("list")
+	public List<Product> getAllEmployees()
+	{
+		List<Product> products=serviceImplementation.displayAlldata();
+		return products;
+	}
+	
+}

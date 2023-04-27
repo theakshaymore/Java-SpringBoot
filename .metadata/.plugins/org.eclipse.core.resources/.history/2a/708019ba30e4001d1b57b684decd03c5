@@ -1,0 +1,21 @@
+package com.example.demo.game;
+
+public class GameRunner {
+
+	
+	public void run() {
+        Mario mario = new Mario();
+        mario.up();
+        mario.down();
+        mario.left();
+        mario.right();
+
+        SuperMario superMario = new SuperMario();
+        superMario.up();
+        superMario.down();
+        superMario.left();
+        superMario.right();
+    }
+	
+
+}

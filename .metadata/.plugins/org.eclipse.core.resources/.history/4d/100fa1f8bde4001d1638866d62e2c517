@@ -1,0 +1,20 @@
+package com.example.demo.rules;
+
+import org.springframework.stereotype.Component;
+
+@Component
+public class Car implements VehicleConsole {
+
+	@Override
+	public void driveSafely() {
+		System.out.println("From Car: Drivesafelt");
+		
+	}
+
+	@Override
+	public void followRules() {
+		System.out.println("Form Car: FollowRUles");
+		
+	}
+
+}
