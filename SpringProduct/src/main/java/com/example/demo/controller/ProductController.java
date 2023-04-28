@@ -64,7 +64,7 @@ public class ProductController {
 	@DeleteMapping("list/{productId}")
 	public void deleteProduct(@PathVariable("productId") int id)
 	{
-		serviceImplementation.deleteById(id);
+		serviceImplementation.deleteById(id);;
 		
 	}
 	
