@@ -20,52 +20,47 @@ import com.example.demo.service.ServiceImplementation;
 @RestController
 @RequestMapping("student")
 public class ProductController {
-	
+
 	private ServiceImplementation serviceImplementation;
-	
+
 	@Autowired
 	public ProductController(ServiceImplementation serviceImplementation) {
 		this.serviceImplementation = serviceImplementation;
 	}
-	
+
 	@GetMapping("list")
-	public List<Student> getAllProducts()
-	{
+	public List<Student> getAllProducts(){
 		List<Student> students=serviceImplementation.displayAlldata();
 		return students;
 	}
-	
+
 	@GetMapping("list/{studentId}")
-	public Student getStudent(@PathVariable("studentId") int id)
-	{
+	public Student getStudent(@PathVariable("studentId") int id){
 		Student student=serviceImplementation.displayById(id);
 		if(student==null)
 		{
 			throw new RuntimeException("Student not found with the given id");
 		}
-	return student;
+		return student;
 	}
-	
-	
+
+
 	@PostMapping("list") 
-	public void insertionStudent(@RequestBody Student student)
-	{
+	public void insertionStudent(@RequestBody Student student){
 		student.setId(0);
 		serviceImplementation.insertStudent(student);
 	}
-	
-	
+
+
 	@PutMapping("list")
-	public void updationProduct(@RequestBody Student student)
-	{
+	public void updationProduct(@RequestBody Student student){
 		serviceImplementation.updateStudentDetails(student);
 	}
-	
-	@DeleteMapping("list/{productId}")
-	public void deleteStudent(@PathVariable("studentId") int id)
-	{
+
+	@DeleteMapping("list/{studentId}")
+	public void deleteStudent(@PathVariable("studentId") int id){
 		serviceImplementation.deleteById(id);;
-		
+
 	}
-	
+
 }
