@@ -1,8 +1,0 @@
-package com.example.demo.persistance;
-
-import com.example.demo.entity.Product;
-
-public interface PersistanceDeclaration {
-	
-	public List<Product> displayAll() 
-}
