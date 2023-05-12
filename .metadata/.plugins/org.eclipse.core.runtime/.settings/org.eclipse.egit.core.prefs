@@ -1,4 +1,4 @@
-GitRepositoriesView.GitDirectories=D\:\\AKSHAY\\SpringFFP\\.git;
-GitRepositoriesView.GitDirectories.relative=.git;
+GitRepositoriesView.GitDirectories=D\:\\AKSHAY\\SpringFFP\\.git;D\:\\AKSHAY\\.git;
+GitRepositoriesView.GitDirectories.relative=.git;D\:\\AKSHAY\\.git;
 core_autoIgnoreDerivedResources=false
 eclipse.preferences.version=1

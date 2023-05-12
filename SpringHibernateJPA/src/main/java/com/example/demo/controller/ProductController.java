@@ -56,7 +56,7 @@ public class ProductController {
 	public void updationProduct(@RequestBody Student student){
 		serviceImplementation.updateStudentDetails(student);
 	}
-
+	
 	@DeleteMapping("list/{studentId}")
 	public void deleteStudent(@PathVariable("studentId") int id){
 		serviceImplementation.deleteById(id);;
